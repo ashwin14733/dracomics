@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .main{
+    display: flex;
+    align-items: center;
+    flex-direction: column; */ 
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+    /* gap: 50px;
+    flex-wrap: wrap;
+}
+.one{
+    width: 50%;
+    background-color: red;
+
+}
+.two{
+    width: 50%;
+    background-color: green;
+}
+.three{
+    width: 50%;
+    background-color: blue;
+    flex-grow: 1;
+}
+*/
+.child1{
+    width: 23%;
+    background-color: red;
+    padding: 5px;
+}
+.child2{
+    width: 23%;
+    background-color: blue;
+    padding: 5px;
+}
+.child3{
+    width: 23%;
+    background-color: green;
+    padding: 5px;
+}
+.child4{
+    width: 23%;
+    background-color: orange;
+    padding: 5px;
+}
+.child5{
+    width: 23%;
+    background-color: red;
+    padding: 5px;
+}
+.child6{
+    width: 23%;
+    background-color: blue;
+    padding: 5px;
+}
+.child7{
+    width: 23%;
+    background-color: green;
+    padding: 5px;
+}
+.child8{
+    width: 23%;
+    background-color: orange;
+    padding: 5px;
+}
+.main{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
