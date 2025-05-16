@@ -28,7 +28,7 @@ body{
     /* padding: 15px 30px; */
     /* background-color: aqua; */
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     border-bottom: 1px solid #7E7979;
     justify-content: space-between;
@@ -37,7 +37,7 @@ body{
 }
 .header{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
 }
@@ -47,16 +47,18 @@ body{
     background-color: #444444;
     border-radius: 25px;
     padding: 8px 15px;
-    width: 600px;
+    gap: 350px;
 }
+
 .search input{
     background: transparent;
     border: none;
     color: white;
-    width: 100%;
+    width: 220px;
     padding: 5px;
     font-size: 16px;
     outline: none;
+    
 }
 .searchimage{
     color: #7E7979;
@@ -64,6 +66,7 @@ body{
 }
 .button{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 .login{
@@ -73,6 +76,9 @@ body{
     padding: 10px 20px;
     background: transparent;
     border: none;
+}
+.login:hover{
+    color: #CA6B0D;
 }
 .signup{
     background-color: #CA6B0D;
@@ -109,6 +115,10 @@ body{
     border: none;
     font-size: 16px;
 }
+.all:hover{
+    background-color: #7E7979;
+    color: white;
+}
 .comics{
     background-color: #7E7979;
     color: white;
@@ -117,6 +127,10 @@ body{
     border-radius: 25px;
     border: none;
     font-size: 16px;
+}
+.comics:hover{
+    background-color: #CA6B0D;
+    color: white;
 }
 .manga{
     background-color: #7E7979;
@@ -127,6 +141,10 @@ body{
     border: none;
     font-size: 16px;
 }
+.manga:hover{
+    background-color: #CA6B0D;
+    color: white;
+}
 .webcomics{
     background-color: #7E7979;
     color: white;
@@ -135,6 +153,10 @@ body{
     border-radius: 25px;
     border: none;
     font-size: 16px;
+}
+.webcomics:hover{
+    background-color: #CA6B0D;
+    color: white;
 }
 .free{
     background-color: #7E7979;
@@ -145,10 +167,16 @@ body{
     border: none;
     font-size: 16px;
 }
-
+.free:hover{
+    background-color: #CA6B0D;
+    color: white;
+}
+.imagesection{
+    margin: 30px 0px;
+}
 .preview{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
@@ -173,6 +201,7 @@ body{
 
 .page{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 25px 15px;
@@ -181,6 +210,9 @@ body{
 #p{
     color: #CA6B0D;
 }
+/* #carddesigntitle{
+    padding-top: 100px;
+} */
 .cdhead{
     display: flex;
     flex-wrap: wrap;
@@ -192,12 +224,14 @@ body{
 }
 .cdtitle{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     font-size: 25px;
 }
 .viewall{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
     cursor: pointer;
@@ -210,8 +244,9 @@ body{
     /* background-color: red; */
 
 }
+
 .boxmain{
-    padding-left: 60px;
+    margin-left: 60px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
@@ -354,6 +389,7 @@ body{
 }
 .cdhead1{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: 2px;
@@ -366,12 +402,14 @@ body{
 }
 .cdtitle1{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     font-size: 25px;
 }
 .viewall1{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
     cursor: pointer;
@@ -531,6 +569,7 @@ body{
 
 .cdhead2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: 2px;
@@ -543,12 +582,14 @@ body{
 }
 .cdtitle2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     font-size: 25px;
 }
 .viewall2{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
     cursor: pointer;
@@ -812,3 +853,69 @@ li{
     cursor: pointer;
 }
 
+
+
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 500px) {
+    .header,.footersection,.copyrights
+    {
+        display: block;
+    }
+    .main,.page,.preview,.cdtitle,.viewall,.cdhead,.boxmain,.cdtitle1,.viewall1,.cdhead1,.boxmain1,.cdtitle2,.viewall2,.cdhead2,.boxmain2,.footercontent,.show,.search,.button{
+        display: flex;
+    }
+    .show{
+        gap: 5px;
+    }
+    .all,.comics,.manga,.webcomics,.free,.login,.signup{
+        font-size: 10px;
+        padding: 15px 20px;
+    }
+    .cdhead,.cdhead1,.cdhead2{
+        font-size: 12px;
+    }
+    .cdtitle,.cdtitle1,.cdtitle2{
+        font-size: 18px;
+    }
+    .boxmain{
+        gap: 16px;
+        margin-left: 40px;
+    }
+    .boxmain1,.boxmain2{
+        gap: 15px;
+        margin-left: 0px; 
+    }
+    .leftsection{
+        width: 300px;
+    }
+    .search{
+        /* width: 300px; */
+        width: 55%;
+        gap: 0px;
+    }
+    .ip::placeholder{
+        font-size: 10px;
+    }
+    .deadpool{
+        width: 40%;
+    }
+    .copyrights{
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+
+
+
+/* ipad Responsiveness */
+@media (min-width: 700px) and (max-width:880px){
+    .search{
+        gap: 20px;
+    }
+}
